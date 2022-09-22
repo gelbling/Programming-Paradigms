@@ -1,0 +1,10 @@
+// Gabriel Amodeo Elbling
+// Prog. Paradigms
+// Activity 5, Q4
+
+
+Compiling is taking code from one language and translating it into another. Transpiling is taking code from one language and
+translating it to another language that has a similar level of abstraction.
+
+We say CoffeeScript transpiles to JS because they have similar levels of abstraction and CoffeeScript code can also serve
+as JS code.

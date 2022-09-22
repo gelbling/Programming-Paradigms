@@ -1,0 +1,10 @@
+// Gabriel Amodeo Elbling
+// Prog. Paradigms
+// Activity H1, Q1
+
+'var' allows for redeclaration in the same block of code
+but 'let' does not. When using 'let' the output is 
+undefined because reassigning 'result' in the same scope
+where it was already reassigned is not allowed. However,
+this reassigning can be done if 'let' were changed to 'var'
+on line 7.

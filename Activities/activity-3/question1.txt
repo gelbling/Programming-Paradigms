@@ -1,0 +1,16 @@
+// Gabriel Amodeo Elbling
+// Prog. Paradigms
+// Activity 3, Q1
+
+The first case (0 == "0") evaluates to true because the == operator in JS checks
+the equality of values, not of types. 
+
+The second case (0 == []) evaluates to true because JS sees that there is no 
+primitive value where there should be one (within the [] array) and thus converts
+it to a '' (empty string) which is logically equivalent to 0. For example: 
+(0 == '') will evaluate to true.
+
+The third case is similar to the second in that JS sees that there is no primitive
+value where there should be one (within the [] array) and thus converts it to a ''
+(empty string). However, when comparing an '' (empty string) to a 0 (zero) using the 
+== operator, the values are not the same, thus JS evaluates it as false.

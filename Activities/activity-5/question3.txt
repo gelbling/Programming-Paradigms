@@ -1,0 +1,6 @@
+// Gabriel Amodeo Elbling
+// Prog. Paradigms
+// Activity 5, Q3
+
+The greaterThan() function is not a high-order function because it doenst take a function as input or returns a function.
+The matchesCriteria() function on the other hand is a high-order function because it returns a function.

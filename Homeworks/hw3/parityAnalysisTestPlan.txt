@@ -1,0 +1,33 @@
+// Gabriel Amodeo Elbling
+// Prog. Paradigms
+// Activity HW3, Q1.2
+
+Test Case 1:
+---
+
+- Input: 0
+- Output: true
+
+Test Case 2:
+---
+
+- Input: 1
+- Output: true
+
+Test Case 3:
+---
+
+- Input: 12
+- Output: false
+
+Test Case 4:
+---
+
+- Input: 12345
+- Output: true
+
+Test Case 5:
+---
+
+- Input: 312
+- Output: true

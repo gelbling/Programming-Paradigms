@@ -1,0 +1,14 @@
+// Gabriel Amodeo Elbling
+// Prog. Paradigms
+// Activity 3, Q2
+
+'Ryan' is printed on line 5 because the objects 'name' attribute is changed to
+'Ryan' on line 3. 
+
+'Irish' is printed on line 6 because the 'heritage' attribute 
+isn't modified after the object is created using the prototype. Thus, 'Irish' is
+printed because it is the default value assigned to the 'heritage' attribute in the 
+object's prototype.
+
+'undefined' is printed on line 7 because the object does not have an attribute
+called 'height'. Thus, JS evaluates it as undefined.

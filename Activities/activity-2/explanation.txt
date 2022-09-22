@@ -1,0 +1,16 @@
+// Gabriel Amodeo Elbling
+// Prog. Paradigms
+// Activity 2, Q3
+
+The two variables firstName and lastName are empty, meaning that they
+evaluate to a boolean false value. The next variable is nickName which, 
+since it is not empty, evaluate to a boolean true value. Since all of 
+these variables are being OR'd together, JS will print the first non 
+false value which in this case is the nickName variable, thus outputing 
+"JCSS".
+
+In the second statement the firstName and lastName values are still
+false and are OR'd together, thus making them meaninless. However, 
+when doing an AND operation on nickName and 'Anonymous', which both
+evaluate to true, 'Anonymous' will be outputted because AND operations
+in JS always return the second (right) operand of the AND statement.

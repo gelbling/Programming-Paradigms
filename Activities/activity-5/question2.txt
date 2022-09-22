@@ -1,0 +1,7 @@
+// Gabriel Amodeo Elbling
+// Prog. Paradigms
+// Activity 5, Q2
+
+a) The value that is printed is 10.
+
+b) If it JS had shallow binding it would output 6.

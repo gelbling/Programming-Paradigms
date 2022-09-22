@@ -1,0 +1,24 @@
+# Gabriel Amodeo Elbling
+# Prog. Paradigms
+# Activity 6, Q2
+
+CoffeesSript: 
+
+Variables a and b have global scopes becasue they are outside the function
+a and b get overwritten with the values inside the function.
+
+Variables d and e have local scopes because they are inside the function and nowhere else.
+
+
+JavaScript:
+
+Variable a has a global scope since it is initialized outside the function and initialized using var.
+
+Variable c has a limited scope since it is initialized using let.
+
+Variable a inside the function is local because it is declared inside.
+
+Variable b has no scope since it isn't initialized anywhere.
+
+Variables d and e both have local scopes since they are initialized inside the function.
+
