@@ -1,0 +1,14 @@
+# Gabriel Amodeo Elbling
+# Prog. Paradigms
+# Activity HW4, Q3
+
+The code in the function print1() works as opposed to the function print2() simply because of
+their usage of the arrows when defining the function (-> vs =>). The usage of -> in the causes
+a TypeError in the 'innerFn'. This due to the fact that functions defined with -> assigns
+the value of the current variable 'this' to the receiver. This error can easily be avoided by 
+switching the -> in the print2() innerFn function to =>. This is because the => function definition
+does not assign the value of the current variable 'this' to the receiver.
+
+The print1() function works perfectly fine because it uses -> on the outside and uses => for 
+defining the inside function, not the other way around as done erroniously inside and outside
+of the print2() function.

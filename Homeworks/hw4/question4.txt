@@ -1,0 +1,36 @@
+# Gabriel Amodeo Elbling
+# Prog. Paradigms
+# Activity HW4, Q4
+
+Definition: 
+    Array comprehension in CoffeeScript is a way to replace for loops and make you code cleaner and more concise.
+    With comprehension it is possible to create a new array, through applying some function/method to thew desired
+    array elements.
+
+Example Description:
+    An example of the usage of list comprehension is if you want to separate professional CSGO (Counter Strike Global Offensive
+    the biggest competitive first person shooter PC game) players according to their kills in a specific match. List comprehension
+    is extremely useful in this case as it is an efficient and clean way of implementing such a funcitonality. This funcitonality
+    can also be expanded to separate, players in this case, by any given attribute or characteristic. In this particular
+    example, I will be creating a new array with player's gamer tags in which the player has more than 35 kills. Blow is an example of this
+    funcitonality is CoffeeScript.
+
+Example Code:
+
+# array that stores player statistics objects objects
+# adr = average death rate
+playerStats = [
+
+    {gamerTag: 'KSCERATO', kills: 55, deaths: 28, adr: 99.8, rating: 1.64}
+    {gamerTag: 'saffee', kills: 41, deaths: 30, adr: 73.3, rating: 1.27}
+    {gamerTag: 'yurrih', kills: 38, deaths: 33, adr: 78.2, rating: 1.11}
+    {gamerTag: 'arT', kills: 34, deaths: 38, adr: 79.6, rating: 1.09}
+    {gamerTag: 'drop', kills: 30, deaths: 33, adr: 70.9, rating: 0.91}
+
+]
+
+# create a variable to store the player's gamer tags that have more than 35 kills
+mostKills = (player.gamerTag for player in playerStats when player.kills > 35)
+
+# display the array of the players with most kills
+console.log mostKills 
