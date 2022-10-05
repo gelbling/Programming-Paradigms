@@ -1,0 +1,13 @@
+# Gabriel Amodeo Elbling
+# Prog. Paradigms
+# HW5, Q2
+
+It is generally good practice to include JS right before the end of the body element is due to
+the reason that whenever a browser encounters a script tag, it downalods and executes it on the spot/
+If this were to be added to the top of the page, there would be a notable drop in rendering speed and 
+user experience. In addition to this, if the DOM isn't fully created at the execution time of the script, 
+JS wouldn't be able to manipulate elements accordingly.
+
+On the other hand, it is generally good practice to include CSS linking in between the head element
+because CSS gets rendered regardless of if the DOM is already created or not. This leads to the page 
+being pretty and customized as soon as the page loads.

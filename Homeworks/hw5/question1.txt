@@ -1,0 +1,18 @@
+# Gabriel Amodeo Elbling
+# Prog. Paradigms
+# HW5, Q1
+
+The <script> element in HTML is used to embed executable code which would correspond to some action, this is usually JS.
+The regular <script> tag without any attributes will pause the document parser, download the script, execute it, and then
+continue the parsing of the reamining HTML.
+
+The <script async> element with the 'async' attribute allows for the given script to be downloaded at the same time as 
+the parsing of the webpage, thus executing the script as soon as possible. If the script is downloaded completely,
+the webpage parsing will he halted, the script will be executed, and then the parsing of the page will continue.
+This attribute is only usable for external scripts.
+
+The <script defer> element with the 'defer' attribute signals to the browser to download the script in parallel to the HTML, but
+but only execute it once the HTML is completely processed and the DOM is built.
+This attribute is only usable for external scripts.
+
+The major difference between these three are when each script is downloaded and executed.

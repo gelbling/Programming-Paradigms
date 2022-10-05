@@ -1,0 +1,89 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #C3E0E5;
+}
+
+ul{
+    width: 100%;
+    float: right;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #41729F;
+}
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+}
+
+a:hover{
+    color: #5885AF;
+}
+
+.profile{
+    text-align: center;
+    padding: auto;
+}
+
+img{
+    border-radius: 30%;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#bio{
+    text-align: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#show-contact{
+    text-align: center;
+    visibility: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+separator{
+    border-top: 3px solid #bbb;
+    border-radius: 5px;
+}
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 1vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-div{
+    text-align: center;
+}
+
+.work{
+    padding-left: 30px;
+}
