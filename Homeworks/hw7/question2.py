@@ -1,6 +1,6 @@
 # Gabriel Amodeo Elbling
 # Prog. Paradigms
-# HW 7, Q2
+# HW7, Q2
 
 # create move_robot iterator function
 def move_robot(n):

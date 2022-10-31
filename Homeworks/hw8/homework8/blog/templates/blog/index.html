@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog Posts</title>
+    </head>
+    <body>
+        <h1>All Blogs:</h1>
+    {% if blog_posts %}
+        <ul>
+        {% for blog in blog_posts %}
+            <li>
+                <a href="{% url 'blog:detail' blog.id %}">
+                    "{{ blog.title }}", by: {{ blog.author_name }}, published: {{ blog.pub_date }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No blogs are available</p>
+    {% endif %}
+    </body>
+</html>
+

@@ -1,6 +1,6 @@
 # Gabriel Amodeo Elbling
 # Prog. Paradigms
-# HW 7, Q1
+# HW7, Q1
 
 # create move_robot iterator
 class move_robot:

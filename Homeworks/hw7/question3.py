@@ -1,6 +1,6 @@
 # Gabriel Amodeo Elbling
 # Prog. Paradigms
-# HW 7, Q3
+# HW7, Q3
 
 import tkinter as tk
 
@@ -65,7 +65,7 @@ class Bot:
 
             # move bot to the north
             self.canvas.move(self.bot,0,-self.stepSize)
-            
+
             # update the orientation to east (+90 degrees)
             self.orientation += 90
             # increment stepSize
@@ -125,15 +125,11 @@ class Bot:
             print("Current Position: (" + str(currentPos[0]) + "," + str(currentPos[1]) + ")")
 
 
+# creates main window object
+root = tk.Tk()
 
-# executed when the file is run
-if __name__ == '__main__':
+# pass TK window object to Bot class
+robotApp = Bot(root)
 
-  # creates main window object
-  root = tk.Tk()
-
-  # pass TK window object to Bot class
-  robotApp = Bot(root)
-
-  # run main loop
-  root.mainloop()
+# run main loop
+root.mainloop()
