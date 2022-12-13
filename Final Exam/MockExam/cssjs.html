@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* your implementation comes here */   
+      h1 {
+        background-color: red;
+        font-weight: bold;
+      }
+    </style>
+    <script type="text/javascript">
+      /* your implementation comes here */   
+      function authenticate(){
+        if (document.getElementById('username').value == 'CSE30332' && document.getElementById('password').value == 'paradigms'){
+            document.getElementById('auth_result').innerText = 'Authenticated!';
+        }
+        else{
+            document.getElementById('auth_result').innerText = 'Authentication Error!';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Sample question</h1>
+    <div class="row">
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+        <input type="radio" name="gender" value="male" />Male<br />
+        <input type="radio" name="gender" value="female" />Female<br />
+        <input type="radio" name="gender" value="other" />Other
+        <input list="Options" />
+        <datalist id="Options">
+          <option value="Option1"></option>
+          <option value="Option2"></option>
+          <option value="Option3"></option>
+        </datalist>        
+      </form>
+      <button onclick="authenticate()">Authenticate</button>
+      <span id="auth_result"></span>
+    </div>
+  </body>
+</html>
