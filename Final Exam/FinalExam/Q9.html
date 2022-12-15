@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+
+      function convertHeight(){
+
+        let feet =  document.getElementById("height_feet").value;
+        let inches = document.getElementById("height_inches").value;
+
+        let converted = (parseInt(feet) * 12 + parseInt(inches)) * 2.54
+
+        document.getElementById("cm").innerText = converted;
+
+        document.querySelector(".row ~ .row").style.display = "block";
+      
+      }
+
+    </script>
+  </head>
+<body>
+
+  <h1>Exam question</h1>
+  <div class="row">
+    <p class="msg">Please enter below your height:</p>
+    <input type="text" name="height_feet" id ="height_feet" /> ft
+    <input type="text" name="height_inches" id= "height_inches" /> in
+    <button onclick="convertHeight()">Convert</button>
+  </div>
+
+
+  <div class="row" style="display: none;">
+    <p>Your height is <span id="cm"></span> cm.</p>
+  </div>
+
+</body>
+</html>

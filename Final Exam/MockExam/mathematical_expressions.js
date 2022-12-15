@@ -54,8 +54,49 @@ Constraints:
 You can safely assume that the root_node will be in the tree dictionary
 The function will return a string
 The tree and the root_node are passed as the argument to the function:
+*/
+
+
+const tree = {
+    "n1_+": ["n2_*","n3_3"], 
+    "n2_*":["n4_2","n5_7"], 
+    "n4_2":[],
+    "n5_7":[],
+    "n3_3":[]
+  }
+
+//      +
+//    *   3
+//  2   7
+
 function tree_to_text(tree, root_node){
     // your implementation here
     // your function will return a string!
+
+    var visited = new Object()
+
+    visited[root_node] = true
+
+    helperDFS(tree, root_node, visited)
+
 }
-*/
+
+function helperDFS(tree, node, visited){
+
+    visited[node] = true
+
+    console.log(node)
+
+    ls = tree[node]
+
+    for (const val of ls) {
+        if (val in visited){
+        }
+        else{
+            helperDFS(tree,val,visited)
+        }
+    }
+
+}
+
+tree_to_text(tree, 'n1_+')
